@@ -128,16 +128,17 @@ h1 {
 }
 
 h1 span {
-  background-image: url(../img/underline.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
+  position: relative;
+  display: inline-block;
 }
 
-/* h1 span::after {
-  content: "";
-  display:block;
-  height:10px;
+h1 span img {
+  position: absolute;
+  bottom: -10px;
+  left: 15px;
+}
+
+/* h1 span {
   background-image: url(../img/underline.svg);
   background-repeat: no-repeat;
   background-size: contain;
